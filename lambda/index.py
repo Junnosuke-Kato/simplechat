@@ -7,7 +7,7 @@ from botocore.exceptions import ClientError
 import urllib.request
 
 
-API_URL = os.environ.get("LLM_API_URL", "https://your-ngrok-url.ngrok.io/generate")  # 環境変数からURLを取得
+API_URL = os.environ.get("LLM_API_URL", "https://d1cf-34-21-13-217.ngrok-free.app/generate")  # 環境変数からURLを取得
 MAX_TOKENS = int(os.environ.get("MAX_NEW_TOKENS", 512))
 
 def lambda_handler(event, context):
